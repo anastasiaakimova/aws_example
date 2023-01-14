@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230109
+      author: Anastasia Akimova
+      changes:
+        - createTable:
+            tableName: images
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    primaryKeyName: pk_image
+              - column:
+                  name: name
+                  type: varchar(20)
+              - column:
+                  name: content_type
+                  type: varchar(20)
+              - column:
+                  name: size
+                  type: bigint
+              - column:
+                  name: created_at
+                  type: datetime
+              - column:
+                  name: image
+                  type: blob

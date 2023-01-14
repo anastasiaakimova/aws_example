@@ -12,7 +12,7 @@ public class DataSourceConfig {
     public DataSource getDataSource() {
         return DataSourceBuilder.create()
                 .driverClassName("com.mysql.jdbc.Driver")
-                .url("jdbc:mysql://database-1.ci4xtsh2mdnf.eu-central-1.rds.amazonaws.com")
+                .url("jdbc:mysql://image.ci4xtsh2mdnf.eu-central-1.rds.amazonaws.com/images")
                 .username("root")
                 .password("12345678")
                 .build();
